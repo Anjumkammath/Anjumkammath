@@ -208,7 +208,16 @@ I am strengthening my portfolio around **multilingual NLP, retrieval systems, an
 
 ---
 
-## GitHub Stats
+## Profile Snapshot
+
+- **Core specialization:** Multilingual NLP, RAG, model evaluation, and dataset-quality analysis
+- **Current role:** ML Data Associate, L3 at Amazon - Alexa Data Services, AGI DS
+- **Flagship project:** PolyGlotAI Research Assistant - multilingual RAG for document-grounded question answering
+- **Portfolio direction:** language data quality, retrieval systems, NLU error analysis, and applied ML systems
+
+<!--
+Optional GitHub stats widgets:
+These use a third-party service and may show errors if the service is rate-limited.
 
 <div align="center">
 
@@ -217,6 +226,7 @@ I am strengthening my portfolio around **multilingual NLP, retrieval systems, an
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Anjumkammath&layout=compact&hide_border=true)
 
 </div>
+-->
 
 ---
 

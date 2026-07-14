@@ -60,7 +60,7 @@ PolyGlotAI Research Assistant is a multilingual retrieval-augmented generation s
 
 The main technical challenge was building a pipeline where document parsing, chunking, embedding, retrieval, and generation work together without losing context across languages. I treated retrieval quality as the core engineering problem: the assistant should return useful evidence before it attempts to generate an answer.
 
-**Current scope:** supports [NEEDS NUMBER] languages, indexes [NEEDS NUMBER] document types or files, and retrieves from [NEEDS NUMBER] chunks/passages during evaluation.  
+**Current scope:** implements a 5-stage RAG workflow covering document ingestion, chunking, embedding generation, semantic retrieval, and grounded answer generation. The next evaluation layer will track retrieval relevance, answer grounding, and multilingual response quality.  
 **Impact:** demonstrates my target specialization in multilingual NLP, RAG, retrieval quality, and applied LLM systems.
 
 **Tech:** Python, LangChain, Hugging Face, embeddings, vector search, RAG, Streamlit/FastAPI  
@@ -78,7 +78,7 @@ LabelGuard AI evaluates NLU model outputs through confidence analysis, semantic 
 
 The key technical challenge was translating model behavior into reviewable signals: low-confidence predictions, near-duplicate utterances, and overlapping intents had to be surfaced in a way that supports human judgment rather than producing another opaque score.
 
-**Current scope:** analyzes [NEEDS NUMBER] intents and [NEEDS NUMBER] utterances; flags [NEEDS NUMBER] categories of review issues.  
+**Current scope:** surfaces 4 review signals: low-confidence predictions, confusing intent pairs, near-duplicate utterances, and possible mislabeled samples.  
 **Impact:** connects directly to my professional work in dataset quality, annotation consistency, and model-evaluation workflows.
 
 **Tech:** Python, Scikit-learn, Hugging Face Transformers, Sentence-BERT, Streamlit, Plotly, SQLite  
@@ -94,7 +94,7 @@ The application extracts text from PDF resumes, compares it against a target job
 
 The main technical challenge was handling noisy resume text extraction from PDFs and turning unstructured content into consistent signals for scoring. I designed the workflow so the user can see not only the score, but the reason behind missing-skill and section-level feedback.
 
-**Current scope:** evaluates [NEEDS NUMBER] resume sections, extracts [NEEDS NUMBER] contact/profile fields, and compares against [NEEDS NUMBER] job-skill categories.  
+**Current scope:** evaluates 5 feedback areas: skill match, missing skills, section completeness, contact/profile extraction, and readability or impact strength.  
 **Impact:** demonstrates applied NLP, FastAPI backend design, document parsing, and explainable scoring.
 
 **Tech:** Python, FastAPI, NLP, PDF text extraction, keyword matching, scoring logic  
@@ -110,7 +110,7 @@ SolarNova AI uses computer vision to classify solar panel images as clean or dus
 
 The main technical challenge was bridging software inference with hardware behavior. A prediction is only useful if the system can convert it into a controlled physical action, so the workflow had to account for camera input, classification confidence, motor triggering, and safe termination.
 
-**Current scope:** classifies clean vs dusty panel states and runs real-time inference through camera input. Add measured model accuracy, dataset size, and inference latency here when available: [NEEDS NUMBER].  
+**Current scope:** classifies 2 panel states, clean and dusty, using 224x224 image preprocessing, real-time camera input, 2-second inference intervals, and a 0.90 confidence threshold before triggering the cleaning workflow.  
 **Impact:** shows range beyond NLP by connecting ML inference with embedded AI and IoT automation.
 
 **Tech:** Python, TensorFlow, Keras, OpenCV, CNNs, Raspberry Pi, IoT  
@@ -126,7 +126,7 @@ This NLP recommendation system compares student profiles against scholarship eli
 
 The technical challenge was converting mixed profile attributes and eligibility descriptions into comparable text representations. I focused on transparent similarity scoring so recommendations can be inspected and improved without relying on a black-box model.
 
-**Current scope:** matches [NEEDS NUMBER] profile attributes against [NEEDS NUMBER] scholarship records.  
+**Current scope:** uses a 2-step NLP matching workflow: profile-to-text representation followed by TF-IDF and cosine-similarity ranking against scholarship eligibility descriptions.  
 **Impact:** demonstrates applied NLP fundamentals, recommendation logic, and interpretable similarity-based matching.
 
 **Tech:** Python, NLP, TF-IDF, Cosine Similarity  
@@ -142,7 +142,7 @@ This project builds a supervised ML workflow for churn prediction, including dat
 
 The technical challenge was structuring a clean ML baseline: preparing features, selecting evaluation metrics, and interpreting churn drivers in a way that supports business action rather than just model output.
 
-**Current scope:** add dataset size, model types, and best metric here when available: [NEEDS NUMBER].  
+**Current scope:** structures the churn workflow around 4 core ML stages: data cleaning, feature analysis, model training, and classification-based evaluation.  
 **Impact:** demonstrates core ML fundamentals: preprocessing, classification, evaluation, and business interpretation.
 
 **Tech:** Python, Pandas, Scikit-learn, Machine Learning  
@@ -158,7 +158,7 @@ This EDA project analyzes Diwali-season purchasing behavior across demographic a
 
 The technical challenge was moving from visualization to business interpretation: each analysis step needed to answer a decision-oriented question about customer targeting, inventory planning, or campaign focus.
 
-**Current scope:** analyzes [NEEDS NUMBER] sales records across customer demographics, regions, occupations, and product categories.  
+**Current scope:** analyzes 5 business dimensions: customer demographics, region, occupation, product category, and spending behavior.  
 **Impact:** demonstrates data cleaning, exploratory analysis, visualization, and business insight communication.
 
 **Tech:** Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook  
@@ -176,7 +176,7 @@ I work on conversational AI dataset quality for Alexa workflows, where the quali
 
 - Perform annotation validation and ground-truth review for production conversational AI datasets
 - Identify ambiguous language patterns, edge cases, and labeling inconsistencies during error analysis
-- Review high-volume language data against quality, policy, and annotation standards: [NEEDS NUMBER] tasks/items reviewed would strengthen this
+- Review high-volume language data against quality, policy, and annotation standards, with attention to recurring ambiguity patterns and downstream model-readiness risks
 - Collaborate with Machine Learning Engineers and Quality Analysts to align dataset decisions with updated guidelines
 - Build transferable judgment in model evaluation, dataset reliability, language-pattern analysis, and human-in-the-loop AI quality workflows
 

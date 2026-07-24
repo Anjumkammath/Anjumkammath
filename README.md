@@ -8,7 +8,6 @@ I build multilingual NLP and model-evaluation systems that make AI outputs easie
 
 [![GitHub](https://img.shields.io/badge/GitHub-Anjumkammath-181717?style=flat&logo=github)](https://github.com/Anjumkammath)
 [![Email](https://img.shields.io/badge/Email-anjumkammath2002%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:anjumkammath2002@gmail.com)
-[![Location](https://img.shields.io/badge/Location-Chennai%2C%20India-blue?style=flat)](#)
 
 </div>
 
@@ -86,6 +85,20 @@ The technical challenge was moving beyond a raw notebook into a complete, review
 
 ---
 
+### Scholarship Recommendation System - Explainable Matching
+
+**Problem solved:** Students often struggle to identify scholarships they are genuinely eligible for among schemes with different academic, income, category, and study-level requirements.
+
+This Streamlit application uses a transparent two-stage recommendation pipeline. It first applies rule-based eligibility filtering, then ranks the eligible scholarships with TF-IDF similarity to return the three most relevant matches with plain-language explanations.
+
+**Current scope:** includes 20 curated Indian scholarship schemes, percentage and CGPA inputs, income brackets, category-aware filtering, explainable ranking, source links, and automated tests for the recommendation logic.  
+**Impact:** demonstrates interpretable recommendation systems, NLP ranking, data validation, modular Python engineering, and user-focused application design.
+
+**Tech:** Python, Streamlit, Pandas, Scikit-learn, TF-IDF, Pytest  
+**Repo:** [scholarship-recommendation-system](https://github.com/Anjumkammath/scholarship-recommendation-system)
+
+---
+
 ### Exploratory Data Analysis Portfolio
 
 **Problem solved:** Raw datasets only become useful when they are cleaned, questioned, visualized, and translated into decision-relevant findings.
@@ -124,7 +137,6 @@ I am also planning additional NLP and model-evaluation projects that will be add
 
 - **LabelGuard AI:** NLU model error analysis and annotation-quality review dashboard
 - **AI Resume Builder and ATS Analyzer:** explainable resume-to-job-description matching workflow
-- **Scholarship Recommendation System:** interpretable NLP matching for student profiles and scholarship eligibility text
 
 ---
 
@@ -132,7 +144,7 @@ I am also planning additional NLP and model-evaluation projects that will be add
 
 **ML Data Associate, L3**  
 **Amazon - Alexa Data Services, AGI DS**  
-Chennai, India | Aug 2025 - Present
+Aug 2025 - Present
 
 I work on conversational AI dataset quality for Alexa workflows, where the quality of annotations, ground truth, and linguistic edge-case handling directly affects model readiness. My role involves reviewing high-volume language data, identifying ambiguous utterances, validating labels against project guidelines, and escalating recurring error patterns that can affect downstream model behavior.
 

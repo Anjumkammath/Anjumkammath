@@ -70,35 +70,35 @@ The main technical challenge was building a pipeline where document parsing, chu
 
 ## Selected Projects
 
-### LabelGuard AI - NLU Model Error Analysis Dashboard
+### Customer Churn Prediction - Explainable ML and Business Framing
 
-**Problem solved:** Intent-classification models can look accurate at a summary level while still hiding mislabeled samples, confusing intent pairs, and repeated failure patterns that reduce production reliability.
+**Problem solved:** Businesses need to identify customers likely to leave before churn affects revenue and retention.
 
-LabelGuard AI evaluates NLU model outputs through confidence analysis, semantic similarity checks, and intent-level error patterns. Instead of only reporting metrics, it helps identify which samples should be reviewed by an annotator or ML team before the dataset is reused for training or evaluation.
+This project builds a full supervised ML workflow for churn prediction using the Telco Customer Churn dataset. It covers data cleaning, exploratory analysis, feature engineering, model comparison, class-imbalance handling, SHAP explainability, revenue-impact framing, and a Streamlit prediction app.
 
-The key technical challenge was translating model behavior into reviewable signals: low-confidence predictions, near-duplicate utterances, and overlapping intents had to be surfaced in a way that supports human judgment rather than producing another opaque score.
+The technical challenge was moving beyond a raw notebook into a complete, reviewable data science project. I structured the workflow so the model is evaluated with precision, recall, F1-score, and ROC-AUC, then translated predictions into plain-language churn drivers and retention actions.
 
-**Current scope:** surfaces 4 review signals: low-confidence predictions, confusing intent pairs, near-duplicate utterances, and possible mislabeled samples.  
-**Impact:** connects directly to my professional work in dataset quality, annotation consistency, and model-evaluation workflows.
+**Current scope:** analyzes 7,043 customer records, compares Logistic Regression and XGBoost variants, selects XGBoost with class weighting, and reports ROC-AUC of 0.8429 with recall of 0.7888.  
+**Impact:** demonstrates core ML fundamentals, model evaluation, explainability, and business interpretation.
 
-**Tech:** Python, Scikit-learn, Hugging Face Transformers, Sentence-BERT, Streamlit, Plotly, SQLite  
-**Repo:** [LabelGuard-AI](https://github.com/Anjumkammath/LabelGuard-AI)
+**Tech:** Python, Pandas, Scikit-learn, XGBoost, SHAP, Streamlit, Matplotlib, Seaborn  
+**Repo:** [Customer-Churn-Prediction](https://github.com/Anjumkammath/Customer-Churn-Prediction)
 
 ---
 
-### AI Resume Builder and ATS Analyzer
+### Exploratory Data Analysis Portfolio
 
-**Problem solved:** Job applicants often receive vague feedback on resumes; this tool turns a resume and job description into structured, explainable ATS-style feedback.
+**Problem solved:** Raw datasets only become useful when they are cleaned, questioned, visualized, and translated into decision-relevant findings.
 
-The application extracts text from PDF resumes, compares it against a target job description, and identifies matched skills, missing skills, section completeness, readability issues, and keyword gaps. It uses rule-based NLP and scoring logic to make the result interpretable rather than presenting a black-box ranking.
+This repository contains a multi-domain EDA portfolio covering retail, healthcare, financial transactions, job-market data, student performance, and social media sentiment. Each project follows a structured workflow: objective definition, data quality review, cleaning, univariate and multivariate analysis, visualization, findings, recommendations, and limitations.
 
-The main technical challenge was handling noisy resume text extraction from PDFs and turning unstructured content into consistent signals for scoring. I designed the workflow so the user can see not only the score, but the reason behind missing-skill and section-level feedback.
+The technical challenge was building a repeatable analysis structure across very different datasets while keeping each project interpretable to a non-technical reader. The portfolio emphasizes measured findings, responsible interpretation, and clear business or operational recommendations.
 
-**Current scope:** evaluates 5 feedback areas: skill match, missing skills, section completeness, contact/profile extraction, and readability or impact strength.  
-**Impact:** demonstrates applied NLP, FastAPI backend design, document parsing, and explainable scoring.
+**Current scope:** includes 6 EDA projects across transaction data, healthcare appointments, financial risk, job postings, education data, and text sentiment data.  
+**Impact:** demonstrates data cleaning, exploratory thinking, visualization, analytical storytelling, and decision-focused communication.
 
-**Tech:** Python, FastAPI, NLP, PDF text extraction, keyword matching, scoring logic  
-**Repo:** [AI-Resume-Builder-ATS-Analyzer](https://github.com/Anjumkammath/AI-Resume-Builder-ATS-Analyzer)
+**Tech:** Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook  
+**Repo:** [Exploratory_Data_Analysis](https://github.com/Anjumkammath/Exploratory_Data_Analysis)
 
 ---
 
@@ -118,51 +118,13 @@ The main technical challenge was bridging software inference with hardware behav
 
 ---
 
-### Scholarship Recommendation System
+## In Development
 
-**Problem solved:** Students often miss relevant scholarships because eligibility criteria are written as long, inconsistent text descriptions.
+I am also planning additional NLP and model-evaluation projects that will be added here once their repositories are ready for public review:
 
-This NLP recommendation system compares student profiles against scholarship eligibility text using TF-IDF and cosine similarity. It ranks opportunities based on profile-to-eligibility relevance, making scholarship discovery more structured and explainable.
-
-The technical challenge was converting mixed profile attributes and eligibility descriptions into comparable text representations. I focused on transparent similarity scoring so recommendations can be inspected and improved without relying on a black-box model.
-
-**Current scope:** uses a 2-step NLP matching workflow: profile-to-text representation followed by TF-IDF and cosine-similarity ranking against scholarship eligibility descriptions.  
-**Impact:** demonstrates applied NLP fundamentals, recommendation logic, and interpretable similarity-based matching.
-
-**Tech:** Python, NLP, TF-IDF, Cosine Similarity  
-**Repo:** [Scholarship-Recommendation-System](https://github.com/Anjumkammath/Scholarship-Recommendation-System)
-
----
-
-### Customer Churn Prediction
-
-**Problem solved:** Businesses need to identify customers likely to leave before churn affects revenue and retention.
-
-This project builds a supervised ML workflow for churn prediction, including data cleaning, feature analysis, model training, and classification-based evaluation. The goal is not only to predict churn, but to understand which customer attributes are useful signals for retention strategy.
-
-The technical challenge was structuring a clean ML baseline: preparing features, selecting evaluation metrics, and interpreting churn drivers in a way that supports business action rather than just model output.
-
-**Current scope:** structures the churn workflow around 4 core ML stages: data cleaning, feature analysis, model training, and classification-based evaluation.  
-**Impact:** demonstrates core ML fundamentals: preprocessing, classification, evaluation, and business interpretation.
-
-**Tech:** Python, Pandas, Scikit-learn, Machine Learning  
-**Repo:** [Customer-Churn-Prediction](https://github.com/Anjumkammath/Customer-Churn-Prediction)
-
----
-
-### Diwali Sales Exploratory Data Analysis
-
-**Problem solved:** Sales data is only useful when it can reveal which customer segments, regions, and product categories drive demand.
-
-This EDA project analyzes Diwali-season purchasing behavior across demographic and product dimensions. It converts raw transaction data into insights about customer groups, regional sales contribution, and category-level demand patterns.
-
-The technical challenge was moving from visualization to business interpretation: each analysis step needed to answer a decision-oriented question about customer targeting, inventory planning, or campaign focus.
-
-**Current scope:** analyzes 5 business dimensions: customer demographics, region, occupation, product category, and spending behavior.  
-**Impact:** demonstrates data cleaning, exploratory analysis, visualization, and business insight communication.
-
-**Tech:** Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook  
-**Repo:** [Exploratory_Data_Analysis](https://github.com/Anjumkammath/Exploratory_Data_Analysis)
+- **LabelGuard AI:** NLU model error analysis and annotation-quality review dashboard
+- **AI Resume Builder and ATS Analyzer:** explainable resume-to-job-description matching workflow
+- **Scholarship Recommendation System:** interpretable NLP matching for student profiles and scholarship eligibility text
 
 ---
 
